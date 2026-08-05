@@ -1,0 +1,183 @@
+@import "./styles.css";
+
+/* ═══════════════════════════════════════════════════════════════
+   MORANDI COLOR SYSTEM — 莫兰迪色系
+   ─────────────────────────────────────────────────────────── */
+:root {
+  --cream:       #f6f3ee;
+  --cream-deep:  #ede7df;
+  --card:        #fdfbf8;
+  --card-warm:   #faf7f2;
+  --text:        #3d3833;
+  --text-soft:   #6b635c;
+  --text-muted:  #9b938b;
+  --rose:        #c2a3a0;
+  --rose-soft:   #d9c4c1;
+  --rose-deep:   #a88480;
+  --sage:        #a8b8a5;
+  --sage-soft:   #c5d1c3;
+  --sage-deep:   #879c84;
+  --blue:        #8d9dad;
+  --blue-soft:   #b4c0ca;
+  --blue-deep:   #6f8293;
+  --lavender:    #b5a9bc;
+  --lavender-soft:#d2c9d7;
+  --terracotta:  #c9aa95;
+  --terracotta-deep:#b08973;
+  --border:      #e5ded5;
+  --border-soft: #efe9e1;
+  --h-title-color: var(--rose-deep);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BASE
+   ─────────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) var(--cream);
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+body {
+  background: var(--cream);
+  color: var(--text);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   NAVIGATION
+   ─────────────────────────────────────────────────────────── */
+.header {
+  border-bottom: 1px solid var(--border-soft) !important;
+  background: rgba(246, 243, 238, 0.85) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 10000;
+}
+
+.navbar-brand {
+  color: var(--text) !important;
+  font-weight: 600 !important;
+}
+
+.nav-link {
+  color: var(--text-soft) !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--rose-deep) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   HERO / TOP SECTION
+   ─────────────────────────────────────────────────────────── */
+.top-section {
+  position: relative;
+  padding: 10rem 0;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.top-section h2 {
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.top-section .top-section-content {
+  position: relative;
+  z-index: 1;
+}
+
+.top-section:before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(61, 56, 51, 0.38);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SECTION TITLES
+   ─────────────────────────────────────────────────────────── */
+section header h2 {
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  color: var(--h-title-color);
+  font-size: 2.3rem;
+  line-height: 4rem;
+  font-weight: 400;
+}
+
+section .main-body {
+  font-size: 1.15rem;
+  font-weight: 350;
+  line-height: 2.2rem;
+  color: var(--text);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SECTION BACKGROUNDS
+   ─────────────────────────────────────────────────────────── */
+.bg-gradient-primary-to-secondary-light {
+  background: linear-gradient(175deg, var(--card) 0%, var(--cream) 100%) !important;
+}
+
+.bg-gradient-primary-to-secondary-dark {
+  background: linear-gradient(175deg, var(--card-warm) 0%, var(--cream-deep) 100%) !important;
+}
+
+.bg-gradient-primary-to-secondary-gray {
+  background: linear-gradient(175deg, #f8f5f1 0%, #f3f0ea 100%) !important;
+}
+
+.bg-bottom {
+  background-color: var(--text) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LINKS
+   ─────────────────────────────────────────────────────────── */
+.main-body a {
+  color: var(--rose-deep);
+  text-decoration: none;
+}
+
+.main-body a:hover {
+  text-decoration: underline;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CODE TAGS
+   ─────────────────────────────────────────────────────────── */
+code {
+  background: var(--border-soft);
+  color: var(--text-soft);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   FOOTER
+   ─────────────────────────────────────────────────────────── */
+footer a {
+  color: var(--rose-soft) !important;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #fff !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ─────────────────────────────────────────────────────────── */
+@media screen and (max-width: 991px) {
+  .top-section { height: 20rem; padding: 6rem 0; }
+  .top-section h2 { font-size: 1.6rem; }
+  section header h2 { font-size: 1.8rem; line-height: 3rem; }
+  section .main-body { font-size: 1.05rem; line-height: 1.9rem; }
+}
