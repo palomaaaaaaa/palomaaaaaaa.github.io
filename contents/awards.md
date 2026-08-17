@@ -2,6 +2,12 @@
 
 ---
 
+> **为什么转向 AI？** 土木工程的训练让我习惯了从物理机制出发理解问题。当我看到混凝土强度可以被回归模型预测、结构裂缝可以被神经网络识别时，我意识到 AI 正在重塑基础设施的设计与维护方式。这条路我从零开始，但每一步都建立在扎实的工程思维之上。
+
+> **Why AI?** My civil engineering training taught me to reason from physical mechanisms. When I saw concrete strength predicted by regression models and structural cracks recognized by neural networks, I realized AI is reshaping how infrastructure is designed and maintained. I started this journey from zero, but every step is built on solid engineering thinking.
+
+---
+
 ### 📚 课程学习 | Coursework
 
 - **机器学习专项课程** — 吴恩达 (Andrew Ng), Stanford/Coursera
@@ -37,5 +43,9 @@
 
 ### 🏆 荣誉与奖项 | Honors
 
-- 校级奖学金, 南京林业大学, 2021–2023
-- [其他奖项待补充]
+- 优秀毕业生 (Outstanding Graduate), 南京林业大学, 2024
+- 三好学生 (Merit Student), 2021–2022、2022–2023
+- 优秀学生 (Excellent Student), 2020–2021
+- 优秀学生干部 (Outstanding Student Cadre), 2022–2023
+- 全国大学生英语竞赛三等奖 (National English Competition, Third Prize)
+- 省级大学生创新创业大赛 (Provincial Innovation & Entrepreneurship Competition)
